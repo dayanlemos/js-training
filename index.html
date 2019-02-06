@@ -1,0 +1,23 @@
+<h1>Test</h1>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+<script type="text/javascript">
+	
+
+
+	var baseUrl = 'http://gateway.marvel.com/';
+	var apiMarvelCharacters = 'v1/public/characters';
+	var apiKey = 'dc1f0549b5d5924f62633bd775ccbe0f';
+
+	//console.log(base_url+apiMarvelCharacters+'?apiKey='+apiKey);
+
+	axios.get(baseUrl+apiMarvelCharacters+'?apikey='+apiKey).then(function(response){
+
+		console.log(response);
+
+	});
+
+
+</script>
